@@ -6,6 +6,8 @@ h2{
 }
 table, th, td {
     border:1px solid black;
+    border-collapse: collapse;
+    border-style: dotted;
   }
   .form-style-4{
 	width: 450px;
