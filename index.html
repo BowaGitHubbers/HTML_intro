@@ -46,72 +46,87 @@
 <br />
 <hr />
 <img src="./images/Hi.png" alt="Hi">
-<table>
-    <tr>
-      <th>Company</th>
-      <th>Contact</th>
-      <th>Country</th>
-    </tr>
-    <tr>
-      <td>LPU</td>
-      <td>123456</td>
-      <td>Philippines</td>
-    </tr>
-    <tr>
-      <td>TIP</td>
-      <td>56789</td>
-      <td>Japan</td>
-    </tr>
-  </table>
-  <h3> An Unordered List</h3>
-  <ul>
-    <li>Coffee</li>
-    <li>Soda</li>
-    <li>Milk</li>
-    <li>Tea</li>
-    <li>Juice</li>
-  </ul>
-  <h3> How to cook Adobo </h3>
-  <ol type="1">
-    <li>Get a pot and make it nice and hot over medium heat. 
-        Pour some oil and sauté garlic and onions. Add pork and 
-        continue sautéing until cooked.</li>
-    <li>Pour Knorr Liquid Seasoning, water, vinegar, laurel leaves, 
-        sugar, and pepper. Add 1pc Knorr Pork Cubes. Bring to a boil 
-        and reduce heat to a simmer, make sure that you don't cover 
-        the pan to evaporate the vinegar. Cook for 10 more minutes.</li>
-    <li>Remove the meat from the sauce and fry, to add extra 
-        crispiness and color to the meat. Return the fried meat in sauce. 
-        Reheat and simmer until sauce thickens.</li>
-  </ol>
-  <form action="">
-
-    <label for="">First Name:</label>
-
-    <input type="text" name="fname" placeholder="Input First Name" /><br />
-
-    <label for="">Password</label>
-
-    <input type="password" name="pwd" placeholder="Input Password" />
-
-  </form>
-  <form class="form-style-4" action="" method="post">
-    <label for="field1">
-    <span>Enter Your Name</span><input type="text" name="field1" required="true" />
-    </label>
-    <label for="field2">
-    <span>Email Address</span><input type="email" name="field2" required="true" />
-    </label>
-    <label for="field3">
-    <span>Short Subject</span><input type="text" name="field3" required="true" />
-    </label>
-    <label for="field4">
-    <span>Message to Us</span><textarea name="field4" onkeyup="adjust_textarea(this)" required="true"></textarea>
-    </label>
-    <label>
-    <span> </span><input type="submit" value="Send Letter" />
-    </label>
+    <table>
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <th>LPU</th>
+        <th>123456</th>
+        <th>Philippines</th>
+      </tr>
+      <tr>
+        <th>TIP</th>
+        <th>56789</th>
+        <th>Japan</th>
+      </tr>
+    </table>
+    <h3>An Unordered List</h3>
+    <ul>
+      <li>Coffee</li>
+      <li>Soda</li>
+      <li>Milk</li>
+      <li>Tea</li>
+      <li>Juice</li>
+    </ul>
+    <h3>How to cook adobo</h3>
+    <ol>
+      <li>
+        Get a pot and make it nice and hot over medium heat. Pour some oil and
+        sauté garlic and onions. Add pork and continue sautéing until cooked.
+      </li>
+      <li>
+        Pour Knorr Liquid Seasoning, water, vinegar, laurel leaves, sugar, and
+        pepper. Add 1pc Knorr Pork Cubes. Bring to a boil and reduce heat to a
+        simmer, make sure that you don't cover the pan to evaporate the vinegar.
+        Cook for 10 more minutes.
+      </li>
+      <li>
+        Remove the meat from the sauce and fry, to add extra crispiness and
+        color to the meat. Return the fried meat in sauce. Reheat and simmer
+        until sauce thickens.
+      </li>
+    </ol>
+    <h3>HTML Forms</h3>
+    <form action="">
+      <label for="">First Name:</label>
+      <input type="text" name="fname" placeholder="Input First Name" /><br />
+      <label for="">Password</label>
+      <input type="password" name="pwd" placeholder="Input Password" />
     </form>
 
-</body>
+    <form class="form-style-4" action="" method="post">
+      <label for="field1">
+        <span>Enter Your Name</span
+        ><input type="text" name="field1" required="true" />
+      </label>
+      <label for="field2">
+        <span>Email Address</span
+        ><input type="email" name="field2" required="true" />
+      </label>
+      <label for="field3">
+        <span>Short Subject</span
+        ><input type="text" name="field3" required="true" />
+      </label>
+      <label for="field4">
+        <span>Message to Us</span
+        ><textarea
+          name="field4"
+          onkeyup="adjust_textarea(this)"
+          required="true"
+        ></textarea>
+      </label>
+      <label> <span> </span><input type="submit" value="Send Letter" /> </label>
+    </form>
+  </body>
+  <script src="js/script.js"></script>
+  <script type="text/javascript">
+    //auto expand textarea
+    function adjust_textarea(h) {
+      h.style.height = "20px";
+      h.style.height = h.scrollHeight + "px";
+    }
+  </script>
 </html>
